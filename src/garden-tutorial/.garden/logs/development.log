@@ -1,0 +1,356 @@
+
+[2021-01-15T18:32:02.354Z] Missing `kind` field in config at roukou/garden.yml
+
+Error Details:
+
+
+path: roukou/garden.yml
+
+
+[2021-01-15T18:32:02.356Z] 
+See error.log for detailed error message
+
+[2021-01-15T18:32:51.805Z] Unknown config kind module in roukou/garden.yml
+
+Error Details:
+
+kind: module
+path: roukou/garden.yml
+
+
+[2021-01-15T18:32:51.806Z] 
+See error.log for detailed error message
+
+[2021-01-15T18:33:35.392Z] Getting status...
+
+[2021-01-15T18:33:35.431Z] Fetching kubectl...
+
+[2021-01-15T18:33:37.033Z] Fetched kubectl
+
+[2021-01-15T18:33:38.047Z] Getting status... → Done
+
+[2021-01-15T18:33:52.850Z] Getting status...
+
+[2021-01-15T18:33:54.039Z] Getting status... → Cached
+
+[2021-01-15T18:33:54.057Z] Run with --force-refresh to force a refresh of provider statuses.
+
+[2021-01-15T18:33:54.084Z] No enabled modules found in project.
+
+[2021-01-15T18:33:54.091Z] Aborting...
+
+[2021-01-15T18:34:19.319Z] Getting status...
+
+[2021-01-15T18:34:20.559Z] Getting status... → Cached
+
+[2021-01-15T18:34:20.572Z] Run with --force-refresh to force a refresh of provider statuses.
+
+[2021-01-15T18:34:20.593Z] No enabled modules found in project.
+
+[2021-01-15T18:34:20.600Z] Aborting...
+
+[2021-01-15T18:36:26.269Z] Getting status...
+
+[2021-01-15T18:36:27.500Z] Getting status... → Cached
+
+[2021-01-15T18:36:27.513Z] Run with --force-refresh to force a refresh of provider statuses.
+
+[2021-01-15T18:36:27.532Z] No enabled modules found in project.
+
+[2021-01-15T18:36:27.541Z] Aborting...
+
+[2021-01-15T18:37:21.261Z] Getting status...
+
+[2021-01-15T18:37:22.469Z] Getting status... → Cached
+
+[2021-01-15T18:37:22.485Z] Run with --force-refresh to force a refresh of provider statuses.
+
+[2021-01-15T18:37:22.561Z]  Processing...
+
+[2021-01-15T18:37:22.570Z] Syncing module sources (7 files)...
+
+[2021-01-15T18:37:22.616Z] Syncing module sources (7 files)... → Done (took 0 sec)
+
+[2021-01-15T18:37:22.625Z] Getting build status for v-3d9c6155de...
+
+[2021-01-15T18:37:22.635Z] Fetching docker...
+
+[2021-01-15T18:37:24.974Z] Fetched docker
+
+[2021-01-15T18:37:25.029Z] Building version v-3d9c6155de...
+
+[2021-01-15T18:37:25.052Z] Building version v-3d9c6155de...
+
+[2021-01-15T18:37:25.066Z] Docker server is not running or cannot be reached.
+
+Error Details:
+
+{}
+
+
+[2021-01-15T18:37:25.081Z] Waiting for code changes...
+
+[2021-01-15T18:45:04.037Z] Getting status...
+
+[2021-01-15T18:45:04.904Z] Command "minikube ip" failed with code 89:
+
+Here's the full output:
+
+* The control plane node must be running for this command
+  - To start a cluster, run: "minikube start"
+
+Error Details:
+
+shortMessage: 'Command failed with exit code 89: minikube ip'
+command: minikube ip
+exitCode: 89
+stdout: |-
+  * The control plane node must be running for this command
+    - To start a cluster, run: "minikube start"
+stderr: ''
+all: |-
+  * The control plane node must be running for this command
+    - To start a cluster, run: "minikube start"
+failed: true
+timedOut: false
+isCanceled: false
+killed: false
+
+
+[2021-01-15T18:45:04.927Z] Failed resolving one or more providers:
+- local-kubernetes
+
+Error Details:
+
+rawConfigs: []
+taskResults:
+  resolve-provider.exec:
+    type: resolve-provider
+    key: resolve-provider.exec
+    name: exec
+    description: resolving provider exec
+    completedAt: 2021-01-15T18:45:04.383Z
+    batchId: 90023981-9e86-4a5c-b1a3-9071d3946e0c
+    output:
+      name: exec
+      dependencies: {}
+      moduleConfigs: []
+      config:
+        name: exec
+        dependencies: []
+        path: /home/eburcham/src/k8s-local-dev-testing/src/garden-tutorial
+      status:
+        ready: true
+        outputs: {}
+        cached: true
+      dashboardPages: []
+    dependencyResults: {}
+    version: 0.12.12
+    startedAt: 2021-01-15T18:45:04.366Z
+  resolve-provider.container:
+    type: resolve-provider
+    key: resolve-provider.container
+    name: container
+    description: resolving provider container
+    completedAt: 2021-01-15T18:45:04.379Z
+    batchId: fe411c5a-b82f-46e9-b889-23810e5d9e88
+    output:
+      name: container
+      dependencies: {}
+      moduleConfigs: []
+      config:
+        name: container
+        dependencies: []
+        path: /home/eburcham/src/k8s-local-dev-testing/src/garden-tutorial
+      status:
+        ready: true
+        outputs: {}
+        cached: true
+      dashboardPages: []
+    dependencyResults: {}
+    version: 0.12.12
+    startedAt: 2021-01-15T18:45:04.367Z
+  resolve-provider.local-kubernetes:
+    type: resolve-provider
+    description: resolving provider local-kubernetes
+    key: resolve-provider.local-kubernetes
+    name: local-kubernetes
+    startedAt: 2021-01-15T18:45:04.380Z
+    completedAt: 2021-01-15T18:45:04.890Z
+    batchId: fe411c5a-b82f-46e9-b889-23810e5d9e88
+    version: 0.12.12
+  resolve-provider.templated:
+    type: resolve-provider
+    key: resolve-provider.templated
+    name: templated
+    description: resolving provider templated
+    completedAt: 2021-01-15T18:45:04.384Z
+    batchId: 39eaac96-e8da-4225-86fc-e0f8710095df
+    output:
+      name: templated
+      dependencies: {}
+      moduleConfigs: []
+      config:
+        name: templated
+        path: /home/eburcham/src/k8s-local-dev-testing/src/garden-tutorial
+      status:
+        ready: true
+        outputs: {}
+        cached: true
+      dashboardPages: []
+    dependencyResults: {}
+    version: 0.12.12
+    startedAt: 2021-01-15T18:45:04.368Z
+messages: []
+
+
+[2021-01-15T18:45:04.939Z] 
+See error.log for detailed error message
+
+[2021-01-15T18:45:05.066Z] Getting status...
+
+[2021-01-15T18:45:46.301Z] Getting status...
+
+[2021-01-15T18:45:47.597Z] Getting status... → Cached
+
+[2021-01-15T18:45:47.609Z] Run with --force-refresh to force a refresh of provider statuses.
+
+[2021-01-15T18:45:47.688Z]  Processing...
+
+[2021-01-15T18:45:47.696Z] Syncing module sources (7 files)...
+
+[2021-01-15T18:45:47.735Z] Syncing module sources (7 files)... → Done (took 0 sec)
+
+[2021-01-15T18:45:47.744Z] Getting build status for v-3d9c6155de...
+
+[2021-01-15T18:45:47.910Z] Building version v-3d9c6155de...
+
+[2021-01-15T18:45:47.980Z] Building roukou:v-3d9c6155de...
+
+[2021-01-15T18:47:05.992Z] Building roukou:v-3d9c6155de... → Done (took 78.2 sec)
+
+[2021-01-15T18:47:06.006Z] Deploying version v-3d9c6155de...
+
+[2021-01-15T18:47:07.906Z] Waiting for resources to be ready...
+
+[2021-01-15T18:47:10.025Z] Deployment/roukou: Readiness probe failed: Get "http://172.17.0.6:8080/actuator/health": dial tcp 172.17.0.6:8080: connect: connection refused
+
+[2021-01-15T18:47:27.814Z] Resources ready
+
+[2021-01-15T18:47:27.857Z] Deploying version v-3d9c6155de... → Done (took 21.8 sec)
+
+[2021-01-15T18:47:27.872Z] → Ingress: http://garden-tutorial.192.168.39.119.nip.io/garden/api/v1.0
+
+[2021-01-15T18:47:27.897Z] → Forward: http://127.10.0.2:45479 → roukou:80 (http)
+
+[2021-01-15T18:47:27.908Z]  Processing...
+
+[2021-01-15T18:47:27.931Z] Waiting for code changes...
+
+[2021-01-15T18:47:27.964Z] Waiting for code changes...
+
+[2021-01-15T18:48:23.416Z]  Processing...
+
+[2021-01-15T18:48:23.427Z] Syncing module sources (7 files)...
+
+[2021-01-15T18:48:23.463Z] Syncing module sources (7 files)... → Done (took 0 sec)
+
+[2021-01-15T18:48:23.473Z] Building version v-242539433e...
+
+[2021-01-15T18:48:23.553Z] Building roukou:v-242539433e...
+
+[2021-01-15T18:48:46.043Z] Building roukou:v-242539433e... → Done (took 22.6 sec)
+
+[2021-01-15T18:48:46.060Z] Deploying version v-242539433e...
+
+[2021-01-15T18:48:47.464Z] Waiting for resources to be ready...
+
+[2021-01-15T18:48:49.567Z] Deployment/roukou: Started container roukou
+
+[2021-01-15T18:48:52.103Z] Deployment/roukou: Readiness probe failed: Get "http://172.17.0.7:8080/actuator/health": dial tcp 172.17.0.7:8080: connect: connection refused
+
+[2021-01-15T18:49:02.748Z] Resources ready
+
+[2021-01-15T18:49:02.781Z] Deploying version v-242539433e... → Done (took 16.7 sec)
+
+[2021-01-15T18:49:02.790Z] → Ingress: http://garden-tutorial.192.168.39.119.nip.io/garden/api/v1.0
+
+[2021-01-15T18:49:02.800Z] → Forward: http://127.10.0.2:45479 → roukou:80 (http)
+
+[2021-01-15T18:49:02.810Z] Waiting for code changes...
+
+[2021-01-15T18:49:08.943Z]  Processing...
+
+[2021-01-15T18:49:08.952Z] Syncing module sources (7 files)...
+
+[2021-01-15T18:49:08.973Z] Syncing module sources (7 files)... → Done (took 0 sec)
+
+[2021-01-15T18:49:08.985Z] Building version v-242539433e...
+
+[2021-01-15T18:49:09.059Z] Building roukou:v-242539433e...
+
+[2021-01-15T18:49:09.149Z] Building roukou:v-242539433e... → Done (took 0.2 sec)
+
+[2021-01-15T18:49:09.159Z] Deploying version v-242539433e...
+
+[2021-01-15T18:49:10.526Z] Waiting for resources to be ready...
+
+[2021-01-15T18:49:12.568Z] Resources ready
+
+[2021-01-15T18:49:12.597Z] Deploying version v-242539433e... → Done (took 3.4 sec)
+
+[2021-01-15T18:49:12.605Z] → Ingress: http://garden-tutorial.192.168.39.119.nip.io/garden/api/v1.0
+
+[2021-01-15T18:49:12.615Z] → Forward: http://127.10.0.2:45479 → roukou:80 (http)
+
+[2021-01-15T18:49:12.625Z]  Processing...
+
+[2021-01-15T18:49:12.636Z] Syncing module sources (7 files)...
+
+[2021-01-15T18:49:12.667Z] Syncing module sources (7 files)... → Done (took 0 sec)
+
+[2021-01-15T18:49:12.678Z] Building version v-242539433e...
+
+[2021-01-15T18:49:12.755Z] Building roukou:v-242539433e...
+
+[2021-01-15T18:49:12.859Z] Building roukou:v-242539433e... → Done (took 0.2 sec)
+
+[2021-01-15T18:49:12.871Z] Deploying version v-242539433e...
+
+[2021-01-15T18:49:14.220Z] Waiting for resources to be ready...
+
+[2021-01-15T18:49:16.286Z] Resources ready
+
+[2021-01-15T18:49:16.319Z] Deploying version v-242539433e... → Done (took 3.4 sec)
+
+[2021-01-15T18:49:16.329Z] → Ingress: http://garden-tutorial.192.168.39.119.nip.io/garden/api/v1.0
+
+[2021-01-15T18:49:16.340Z] → Forward: http://127.10.0.2:45479 → roukou:80 (http)
+
+[2021-01-15T18:49:16.352Z]  Processing...
+
+[2021-01-15T18:49:16.363Z] Syncing module sources (7 files)...
+
+[2021-01-15T18:49:16.409Z] Syncing module sources (7 files)... → Done (took 0 sec)
+
+[2021-01-15T18:49:16.421Z] Building version v-3d9c6155de...
+
+[2021-01-15T18:49:16.496Z] Building roukou:v-3d9c6155de...
+
+[2021-01-15T18:49:16.604Z] Building roukou:v-3d9c6155de... → Done (took 0.2 sec)
+
+[2021-01-15T18:49:16.618Z] Deploying version v-3d9c6155de...
+
+[2021-01-15T18:49:18.066Z] Waiting for resources to be ready...
+
+[2021-01-15T18:49:20.137Z] Deployment/roukou: Readiness probe failed: Get "http://172.17.0.6:8080/actuator/health": dial tcp 172.17.0.6:8080: connect: connection refused
+
+[2021-01-15T18:49:33.386Z] Resources ready
+
+[2021-01-15T18:49:33.419Z] Deploying version v-3d9c6155de... → Done (took 16.8 sec)
+
+[2021-01-15T18:49:33.431Z] → Ingress: http://garden-tutorial.192.168.39.119.nip.io/garden/api/v1.0
+
+[2021-01-15T18:49:33.444Z] → Forward: http://127.10.0.2:45479 → roukou:80 (http)
+
+[2021-01-15T18:49:33.456Z] Waiting for code changes...

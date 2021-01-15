@@ -1,0 +1,135 @@
+
+[2021-01-15T18:32:02.354Z] Missing `kind` field in config at roukou/garden.yml
+
+Error Details:
+
+
+path: roukou/garden.yml
+
+
+[2021-01-15T18:32:51.804Z] Unknown config kind module in roukou/garden.yml
+
+Error Details:
+
+kind: module
+path: roukou/garden.yml
+
+
+[2021-01-15T18:37:25.066Z] Docker server is not running or cannot be reached.
+
+Error Details:
+
+{}
+
+
+[2021-01-15T18:45:04.903Z] Command "minikube ip" failed with code 89:
+
+Here's the full output:
+
+* The control plane node must be running for this command
+  - To start a cluster, run: "minikube start"
+
+Error Details:
+
+shortMessage: 'Command failed with exit code 89: minikube ip'
+command: minikube ip
+exitCode: 89
+stdout: |-
+  * The control plane node must be running for this command
+    - To start a cluster, run: "minikube start"
+stderr: ''
+all: |-
+  * The control plane node must be running for this command
+    - To start a cluster, run: "minikube start"
+failed: true
+timedOut: false
+isCanceled: false
+killed: false
+
+
+[2021-01-15T18:45:04.925Z] Failed resolving one or more providers:
+- local-kubernetes
+
+Error Details:
+
+rawConfigs: []
+taskResults:
+  resolve-provider.exec:
+    type: resolve-provider
+    key: resolve-provider.exec
+    name: exec
+    description: resolving provider exec
+    completedAt: 2021-01-15T18:45:04.383Z
+    batchId: 90023981-9e86-4a5c-b1a3-9071d3946e0c
+    output:
+      name: exec
+      dependencies: {}
+      moduleConfigs: []
+      config:
+        name: exec
+        dependencies: []
+        path: /home/eburcham/src/k8s-local-dev-testing/src/garden-tutorial
+      status:
+        ready: true
+        outputs: {}
+        cached: true
+      dashboardPages: []
+    dependencyResults: {}
+    version: 0.12.12
+    startedAt: 2021-01-15T18:45:04.366Z
+  resolve-provider.container:
+    type: resolve-provider
+    key: resolve-provider.container
+    name: container
+    description: resolving provider container
+    completedAt: 2021-01-15T18:45:04.379Z
+    batchId: fe411c5a-b82f-46e9-b889-23810e5d9e88
+    output:
+      name: container
+      dependencies: {}
+      moduleConfigs: []
+      config:
+        name: container
+        dependencies: []
+        path: /home/eburcham/src/k8s-local-dev-testing/src/garden-tutorial
+      status:
+        ready: true
+        outputs: {}
+        cached: true
+      dashboardPages: []
+    dependencyResults: {}
+    version: 0.12.12
+    startedAt: 2021-01-15T18:45:04.367Z
+  resolve-provider.local-kubernetes:
+    type: resolve-provider
+    description: resolving provider local-kubernetes
+    key: resolve-provider.local-kubernetes
+    name: local-kubernetes
+    startedAt: 2021-01-15T18:45:04.380Z
+    completedAt: 2021-01-15T18:45:04.890Z
+    batchId: fe411c5a-b82f-46e9-b889-23810e5d9e88
+    version: 0.12.12
+  resolve-provider.templated:
+    type: resolve-provider
+    key: resolve-provider.templated
+    name: templated
+    description: resolving provider templated
+    completedAt: 2021-01-15T18:45:04.384Z
+    batchId: 39eaac96-e8da-4225-86fc-e0f8710095df
+    output:
+      name: templated
+      dependencies: {}
+      moduleConfigs: []
+      config:
+        name: templated
+        path: /home/eburcham/src/k8s-local-dev-testing/src/garden-tutorial
+      status:
+        ready: true
+        outputs: {}
+        cached: true
+      dashboardPages: []
+    dependencyResults: {}
+    version: 0.12.12
+    startedAt: 2021-01-15T18:45:04.368Z
+messages: []
+
